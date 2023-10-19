@@ -1,0 +1,154 @@
+@import url('../components/header.css');
+@import url('../components/footer.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+
+}
+
+.container-header {
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:0;
+  padding: 0 20px 0 20px;
+
+}
+
+.header-login {
+  display: none;
+}
+
+.container-allProducts {
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+
+}
+
+.allProducts-title {
+  font-weight: 700;
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+
+  margin-top: 20px;
+
+}
+
+.allProducts-button {
+  width: 152px;
+  padding: 15px 15px;
+
+  border: none;
+
+  font-weight: 600;
+  font-size: .75rem;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+}
+
+.allProducts-button:hover{
+  background: #5595E9;
+  color: #fff;
+  transition: 0.4s all ease-out;
+  cursor: pointer;
+}
+
+.container-tittle {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-allProductsShow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.product-box-link {
+  display: none;
+}
+
+.product-id {
+  display: block;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  width: 140px;
+  position: relative;
+}
+
+.product-box-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 4px;
+}
+
+.product-box-img:hover {
+
+  opacity: 0.3;
+}
+
+.product-delete,
+.product-edit {
+  display: flex;
+  position: absolute;
+
+  cursor: pointer;
+}
+
+.product-delete {
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  transform: translate(330%, 25%);
+
+  background-color: #fa6d6d;
+}
+
+
+.product-edit {
+  width: 25px;
+  height: 25px;
+  top: 2.2%;
+  transform: translate(430%);
+
+  background-color: rgba(69, 69, 69, .4);
+}
+
+.product-box-title {
+  font-size: .875rem;
+}
+
+.product-box-price {
+  font-weight: 700;
+}
+
+.container-nav {
+  margin-bottom: 0;
+}
+

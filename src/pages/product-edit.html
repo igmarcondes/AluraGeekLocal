@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/pages/product-edit.css">
+
+  <title>AluraGeek - Editar produto</title>
+</head>
+
+<body>
+  <header>
+    <section class="container-header">
+      <a href="index.html">
+        <div class="header-logo">
+          <img src="../img/header/logo img.svg" alt="img logo" class="logo-img">
+          <img src="../img/header/logo texto.svg" alt="logo text" class="logo-text">
+        </div>
+      </a>
+
+      <a href="../pages/login.html" class="header-admin">Menu administrador</a>
+
+      <div class="container-search">
+        <input type="search" name="search" class="search-input" placeholder="O que deseja encontrar?">
+        <img src="../img/header/search.png" alt="imagem lupa" class="header-search">
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="container-addProduct">
+      <div class="addProductDiv">
+        <h3 class="addProduct-title">Editar produto</h3>
+
+        <form data-form>
+          <p class="text-form-desc">Imagem</p>
+          <input type="url" name="url" class="addProduct-input" data-url required>
+          <label for="url" class="addProduct-label url"></label>
+
+          <p class="text-form-desc">Categoria</p>
+          <input type="text" name="section" class="addProduct-input" data-section required>
+          <label for="section" class="addProduct-label section"></label>
+
+
+          <p class="text-form-desc">Nome do produto</p>
+          <input type="text" name="name" class="addProduct-input" data-name required>
+          <label for="name" class="addProduct-label name"></label>
+
+
+          <p class="text-form-desc">Preço do produto</p>
+          <input type="number" name="price" class="addProduct-input" data-price required>
+          <label for="price" class="addProduct-label price"></label>
+          <p class="text-form-desc">Descrição</p>
+          <textarea name="description" cols="30" rows="10" class="addProduct-input description"
+            placeholder="Descrição do produto" data-description required></textarea>
+
+          <button class="addProduct-button">Adicionar produto</button>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="container-footer">
+      <div class="footerdiv">
+        <a href="index.html">
+          <div class="header-logo">
+            <img src="../img/header/logo img.svg" alt="img logo" class="logo-img large">
+            <img src="../img/header/logo texto.svg" alt="logo text" class="logo-text wider">
+          </div>
+        </a>
+          <nav>
+            <ul class="footer-list">
+              <li class="footer-list-item">Quem somos nós</li>
+              <li class="footer-list-item">Política de privacidade</li>
+              <li class="footer-list-item">Programa fidelidade</li>
+              <li class="footer-list-item">Nossas lojas</li>
+              <li class="footer-list-item">Quero ser franqueado</li>
+              <li class="footer-list-item">Anuncie aqui</li>
+            </ul>
+          </nav>
+       
+
+        <form>
+          <section class="container-form">
+            <p class="form-title">Fale conosco</p>
+
+            <div class="container-input">
+              <input name="nome" type="text" class="input-name" required>
+              <label for="nome" class="input-label">Nome</label>
+
+              <textarea name="menssage" id="" cols="30" rows="10" class="input-menssage"
+                placeholder="Escreva sua mensagem" required></textarea>
+
+              <button class="input-button">Enviar mensagem</button>
+            </div>
+          </section>
+        </form>
+        </div>
+    </section>
+
+    <section class="container-developer">
+      <p class="developer-name">Desenvolvido por Igor Marcondes 2023</p>
+    </section>
+  </footer>
+  <script src="../js/controller/product-edit-controller.js" type="module"></script>
+  <script src="../js/search.js"></script>
+
+</body>
+
+
+</html>

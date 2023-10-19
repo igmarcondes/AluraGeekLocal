@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/pages/home.css">
+
+  <title>AluraGeek</title>
+</head>
+
+<body>
+  <header>
+    <section class="container-header">
+
+      <a href="index.html">
+        <div class="header-logo">
+          <img src="../img/header/logo img.svg" alt="img logo" class="logo-img">
+          <img src="../img/header/logo texto.svg" alt="logo text" class="logo-text">
+        </div>
+      </a>
+      <a href="./login.html" class="header-login">Login</a>
+
+      <div class="container-search">
+        <input type="search" name="search" class="search-input" placeholder="O que deseja encontrar?" list="options">
+        <img src="../img/header/search.png" alt="imagem lupa" class="header-search">
+
+        <datalist id="options" class="search-options" data-options>
+        </datalist>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="container-banner">
+
+      <div class="banner-div">
+        <h1 class="text-tittle">Dezembro Promocional</h1>
+  
+        <p class="text-description">Produtos selecionados com 33% de desconto</p>
+  
+        <a href="./consoles.html" class="text-link"> Ver Consoles</a>
+
+      </div>
+
+    </section>
+
+    <!-- Star Wars -->
+    <section class="container-products" id="starWars">
+      <div class="products-titleBar">
+        <h2 class="products-titleBar-tittle">Star Wars</h2>
+
+        <div class="container-seeAll">
+          <a href="./star-wars.html" class="products-titleBar-link">Ver tudo</a>
+          <img src="../img/products/arrow_back_black_24dp 1.png" alt="" class="products-titleBar-arrow">
+        </div>
+      </div>
+
+      <section class="products-preview starWars" data-starwars></section>
+    </section>
+
+    <!-- Consoles -->
+    <section class="container-products" id="consoles">
+      <div class="products-titleBar">
+        <h2 class="products-titleBar-tittle">Consoles</h2>
+
+        <div class="container-seeAll">
+          <a href="./consoles.html" class="products-titleBar-link">Ver tudo</a>
+          <img src="../img/products/arrow_back_black_24dp 1.png" alt="" class="products-titleBar-arrow">
+        </div>
+      </div>
+
+      <section class="products-preview consoles" data-consoles></section>
+    </section>
+
+    <!-- Diversos -->
+    <section class="container-products" id="diversos">
+      <div class="products-titleBar">
+        <h2 class="products-titleBar-tittle">Diversos</h2>
+
+        <div class="container-seeAll">
+          <a href="./diversos.html" class="products-titleBar-link">Ver tudo</a>
+          <img src="../img/products/arrow_back_black_24dp 1.png" alt="" class="products-titleBar-arrow">
+        </div>
+      </div>
+
+      <section class="products-preview diversos" data-diversos></section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="container-footer">
+      <div class="footerdiv">
+        
+        <a href="index.html">
+          <div class="header-logo">
+            <img src="../img/header/logo img.svg" alt="img logo" class="logo-img large">
+            <img src="../img/header/logo texto.svg" alt="logo text" class="logo-text wider">
+          </div>
+        </a>
+        
+          <nav>
+            <ul class="footer-list">
+              <li class="footer-list-item">Quem somos nós</li>
+              <li class="footer-list-item">Política de privacidade</li>
+              <li class="footer-list-item">Programa fidelidade</li>
+              <li class="footer-list-item">Nossas lojas</li>
+              <li class="footer-list-item">Quero ser franqueado</li>
+              <li class="footer-list-item">Anuncie aqui</li>
+            </ul>
+          </nav>
+       
+
+        <form>
+          <section class="container-form">
+            <p class="form-title">Fale conosco</p>
+
+            <div class="container-input">
+              <input name="nome" type="text" class="input-name" required>
+              <label for="nome" class="input-label">Nome</label>
+
+              <textarea name="menssage" id="" cols="30" rows="10" class="input-menssage"
+                placeholder="Escreva sua mensagem" required></textarea>
+
+              <button class="input-button">Enviar mensagem</button>
+            </div>
+          </section>
+        </form>
+        </div>
+    </section>
+
+    <section class="container-developer">
+      <p class="developer-name">Desenvolvido por Igor Marcondes 2023</p>
+    </section>
+  </footer>
+
+  <script src="../js/controller/product-section-controller.js" type="module"></script>
+  <script src="../js/search.js"></script>
+
+</body>
+
+</html>
